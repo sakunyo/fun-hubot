@@ -1,31 +1,35 @@
 https://hubot.github.com/docs/scripting/
 
+## robot
+mathod            | pattern                    | action
+------------------|----------------------------|----------------------------------------------
+robot.hear        | `/badger/i`                | "... badger ..."
+robot.respond     | `/open the pod bay doors/` | "@HAL: open the pod bay doors" Robot's name.
+
+mathod            | action
+------------------|-------------------------------------------------
+robot.http        | HTTP calls
+robot.enter       | `robot.enter (res) -> res.send 'Hi'`
+robot.leave       | `robot.leave (res) -> res.send 'See you next time.'`
+robot.listen      | It makes custom listeners.
+
+## res
+mathod            | action
+------------------|-------------------------------------------------
+res.send          | A message back to the room the res came from.
+res.reply         | A message to a room.
+res.emote         | Reply to the person that sent the message
+res.random        | `res.random ['lol', 'rofl', 'lmao']`
+
+
+### Custom Listeners
 ```coffeescript
-robot.hear
-
-robot.respond
-
-res.send
-
-res.reply
-
-res.emote
-
-robot.messageRoom
-
-robot.http("https://midnight-train")
-    .get() (err, res, body) ->
-
-res.random
-
-robot.enter
-
-robot.leave
-
-# and Custom Listeners
-robot.listen
+robot.listen(
   (message) ->
+    # do something
   (response) ->
+    # do something
+)
 ```
 
 
