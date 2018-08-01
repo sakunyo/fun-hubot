@@ -2,8 +2,11 @@
   "name": "mybot",
   "version": "0.0.0",
   "private": true,
-  "author": "Sakuya Sugo <sakuya.s@gmail.com>",
-  "description": "A simple helpful robot for your Company",
+  "author": "Shinya Sugo <sakuya.s@gmail.com>",
+  "description": "my hubot",
+  "scripts": {
+    "test": "node ./test/hello.js"
+  },
   "dependencies": {
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
