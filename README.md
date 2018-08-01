@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/sakunyo/fun-hubot.svg?style=svg)](https://circleci.com/gh/sakunyo/fun-hubot)
+
 https://hubot.github.com/docs/scripting/
 
 ## robot
